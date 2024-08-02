@@ -16,9 +16,16 @@
                 $this->price = $price;
             }
 
+
+
+//--------------------------「show_price」メソッド---------------------
             public function show_price() {
                 return $this->price;
             }
+//--------------------------「show_price」メソッド---------------------
+
+
+
 
             public function __toString() {
                 return "Food Object ( [name:Food:private] => {$this->name} [price:Food:private] => {$this->price} )";
@@ -36,9 +43,16 @@
                 $this->weight = $weight;
             }
 
+
+
+
+//--------------------------「show_height」メソッド---------------------
             public function show_height() {
                 return $this->height;
             }
+//--------------------------「show_height」メソッド---------------------
+
+
 
             public function __toString() {
                 return "Animal Object ( [name:Animal:private] => {$this->name} [height:Animal:private] => {$this->height} [weight:Animal:private] => {$this->weight} )";
