@@ -16,16 +16,11 @@
                 $this->price = $price;
             }
 
-
-
-//--------------------------「show_price」メソッド---------------------
+            //--------------------------「show_price」メソッド---------------------
             public function show_price() {
-                return $this->price;
+                echo $this->price;
             }
-//--------------------------「show_price」メソッド---------------------
-
-
-
+            //--------------------------「show_price」メソッド---------------------
 
             public function __toString() {
                 return "Food Object ( [name:Food:private] => {$this->name} [price:Food:private] => {$this->price} )";
@@ -43,16 +38,11 @@
                 $this->weight = $weight;
             }
 
-
-
-
-//--------------------------「show_height」メソッド---------------------
+            //--------------------------「show_height」メソッド---------------------
             public function show_height() {
-                return $this->height;
+                echo $this->height;
             }
-//--------------------------「show_height」メソッド---------------------
-
-
+            //--------------------------「show_height」メソッド---------------------
 
             public function __toString() {
                 return "Animal Object ( [name:Animal:private] => {$this->name} [height:Animal:private] => {$this->height} [weight:Animal:private] => {$this->weight} )";
@@ -65,8 +55,12 @@
         echo $food . "<br>";
         echo $animal . "<br>";
 
-        echo $food->show_price() . "<br>";
-        echo $animal->show_height();
+        // show_priceメソッドで価格を出力
+        $food->show_price();
+        echo "<br>";
+
+        // show_heightメソッドで高さを出力
+        $animal->show_height();
         ?>
     </p>
 </body>
